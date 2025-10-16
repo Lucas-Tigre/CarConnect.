@@ -1,0 +1,85 @@
+/* Linha divisória */
+.login-box hr {
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    border-top: 1px solid #4a6391; /* Cor da linha */
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os elementos do formulário */
+}
+
+.login-form h2 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block; /* Faz o label ocupar a linha toda */
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #273757; /* Cor do texto digitado */
+}
+
+/* Estilo do botão ENTRAR */
+.btn.btn-primary {
+    background-color: #375787; /* Azul mais claro, como na sidebar */
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #4a6aa0;
+    transform: scale(1.03);
+}
+
+
+/* Link de recuperar senha */
+.recovery-link {
+    margin-top: 20px;
+}
+
+.recovery-link a {
+    color: #e0e0e0;
+    font-size: 13px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: color 0.3s ease;
+}
+
+.recovery-link a:hover {
+    color: #ffffff;
+}
+
+.recovery-link img {
+    width: 16px;
+    height: 16px;
+}
