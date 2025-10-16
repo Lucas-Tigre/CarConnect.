@@ -3,91 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CarConnect - Plataforma de conexão entre vendedores e clientes automotivos">
-    
+
     <title>CarConnect - Bem-vindo</title>
-    
-    <!-- Otimização: CSS único -->
     <link rel="stylesheet" href="inicio.css">
-    
-    <!-- Otimização: Preconexão apenas se for usar fonts.google -->
+
+<link rel="icon" type="image/png" href="CarConnectlogo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Adicione aqui o link das fonts se for usar -->
-    
-    <link rel="icon" type="image/png" href="CarConnectlogo.png">
+    <link href="inicio.css" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Estrutura semântica correta -->
-    <div class="app-container">
-        
-        <!-- Main content area -->
-        <main class="main-content" role="main">
-            <section class="login-section" aria-labelledby="login-heading">
-                <div class="login-container">
-                    <img src="CarConnectlogo.png" 
-                         alt="CarConnect - Plataforma de conexão automotiva" 
-                         class="brand-logo">
-                    
-                    <h1 id="login-heading" class="brand-title">CarConnect</h1>
-                    <p class="brand-subtitle" lang="ja">カーコネクト</p>
-                    
-                    <div class="access-options" role="group" aria-label="Escolha seu tipo de acesso">
-                        <a href="LoginVendedor.html" class="access-btn" role="button">
-                            <span class="btn-text">Vendedor</span>
-                            <span class="sr-only">Acessar área do vendedor</span>
-                        </a>
-                        
-                        <a href="LoginCliente.html" class="access-btn" role="button">
-                            <span class="btn-text">Cliente</span>
-                            <span class="sr-only">Acessar área do cliente</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        
-        <!-- Features sidebar -->
-        <aside class="features-sidebar" aria-label="Características da plataforma">
-            <div class="feature-item">
-                <span class="feature-icon" aria-hidden="true">🛡️</span>
-                <span class="feature-text">
-                    <span lang="ja" class="jp-text">安全性</span>
-                    <span class="en-text">Segurança</span>
-                </span>
-            </div>
+
+    <main class="container">
+
+        <section class="login-box">
             
-            <div class="feature-item">
-                <span class="feature-icon" aria-hidden="true">🎯</span>
-                <span class="feature-text">
-                    <span lang="ja" class="jp-text">使いやすさ</span>
-                    <span class="en-text">Facilidade</span>
-                </span>
+            <img src="CarConnectlogo.png" alt="Logo CarConnect" class="logo">
+
+            <h1>CarConnect</h1>
+            <p class="subtitle">カーコネクト</p>
+
+            <div class="button-group">
+                <a href="LoginVendedor.html" class="btn">Vendedor</a>
+                <a href="LoginCliente.html" class="btn">Cliente</a>
             </div>
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="sidebar-item">
+    <main class="container">
+
+        <section class="login-box">
             
-            <div class="feature-item">
-                <span class="feature-icon" aria-hidden="true">♿</span>
-                <span class="feature-text">
-                    <span lang="ja" class="jp-text">アクセシビリティ</span>
-                    <span class="en-text">Acessibilidade</span>
-                </span>
+                <span class="jp-text">安全性</span>
+                <span class="en-text">Segurança</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="jp-text">使いやすさ</span>
+                <span class="en-text">Facilidade</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="jp-text">アクセシビリティ</span>
+                <span class="en-text">Acessibilidade</span>
             </div>
         </aside>
-    </div>
 
-    <!-- CSS para elementos de acessibilidade -->
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
+    </main>
+    
 </body>
 </html>
